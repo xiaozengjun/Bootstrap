@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/index/index.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+	<link rel="stylesheet" href="../assets/css/aos.css" />
+	<!-- <link rel="stylesheet" href="../assets/css/styles.css" /> -->
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!--[if lt IE 9]>
+      <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			  <!-- Brand and toggle get grouped for better mobile display -->
+			  <div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				  <span class="sr-only">切换导航</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Brand</a>
+			  </div>
+		  
+			  <div class="collapse navbar-collapse topNav" id="bs-example-navbar-collapse-1">
+				<button type="button" class="btn btn-default">登录</button>
+				<button type="button" class="btn btn-default">注册</button>
+				<ul class="nav navbar-nav">
+				  <li class="active"><a href="#">首页</a></li>
+				  <li><a href="#">系统介绍</a></li>
+				  <li><a href="#">提交查重</a></li>
+				  <li><a href="#">下载报告</a></li>
+				  <li><a href="#">行业资讯</a></li>
+				  <li><a href="#">关于我们</a></li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+	</div>
+
+	<div>
+		<section class="section section--code">
+			<div class="container">
+				<div>
+					<div style="float: left;" id="example-anchor" class="code code--left" aos="fade-right" aos-offset="300" aos-easing="ease-in-sine">
+						<pre><code>&lt;div aos="fade-right"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aos-offset="300"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aos-easing="ease-in-sine">&#13;&lt;/div></code></pre>
+					</div>
+					<div style="float: right;" id="example-anchor" class="code code--left" aos="fade-left" aos-offset="300" aos-easing="ease-in-sine">
+						<pre><code>&lt;div aos="fade-right"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aos-offset="300"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aos-easing="ease-in-sine">&#13;&lt;/div></code></pre>
+					</div>
+				</div>
+				<div class="code code--right" aos="fade-left" aos-anchor="#example-anchor" aos-offset="500" aos-duration="500">
+					<pre><code>&lt;div aos="fade-left"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aos-anchor="#example-anchor"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aos-offset="500"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aos-duration="500">&#13;&lt;/div></code></pre>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="container indexBottom">
+		<div class="row">
+			<div class="col-md-3 col-lg-4 col-sm-5 col-xs-7">
+				<img src="https://picsum.photos/id/338/200/200" alt="">
+			</div>
+			<div class="col-md-2 col-lg-2 col-sm-2 col-xs-5">
+				<ul class="bottomMain">
+					<span>热门链接</span>
+					<li>系统介绍</li>
+					<li>提交论文</li>
+					<li>下载论文</li>
+					<li>行业咨询</li>
+					<li>关于我们</li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-lg-3 col-sm-3 col-xs-6 hidden-xs hidden-sm">
+				<ul class="bottomMain">
+					<span>联系我们</span>
+					<li>业务联系: check@papercheck.com.cn</li>
+					<li>客户服务: supporcheck.com.cn</li>
+					<li>投诉建议: admin@papercheck.com.cn</li>
+					<li>固定电话: 010 63103011</li>
+					<li>紧急电话: 186 0132 0801</li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-lg-3 col-sm-5 col-xs-12">
+				<div class="erweima">
+					<img src="https://picsum.photos/id/89/200/200" alt="">
+					<br>
+					<span>
+						微信客服
+					</span>
+				</div>
+				<div class="erweima">
+					<img class="gzh" src="https://picsum.photos/id/89/200/200" alt="">
+					<br>
+					<span>
+						微信公众号
+					</span>
+				</div>
+			</div>
+		  </div>
+	</div>
+</body>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/aos.js"></script>
+<script>
+	AOS.init({
+		easing: 'ease-out-back',
+		duration: 1000
+	});
+</script>
+
+<script>
+	hljs.initHighlightingOnLoad();
+
+	$('.hero__scroll').on('click', function(e) {
+		$('html, body').animate({
+			scrollTop: $(window).height()
+		}, 1200);
+	});
+</script>
+</html>
